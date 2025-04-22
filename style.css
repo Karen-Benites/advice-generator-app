@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+    --neon-green: #53FFAA;
+    --light-cyan: #CEE3E9;
+    --greyish-blue: #4F5D74;
+    --dark-grayish-blue: #313A48;
+    --dark-blue: #202733;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-blue);
+    color: var(--light-cyan);
+}
+
+.card__container{
+    position: relative;
+    min-width: 343px;
+    width: 90%;
+    max-width: 540px;
+    min-height: 316px;
+    height: 48%;
+    max-height: 332px;
+    border-radius: 10px;
+    padding: 40px 24px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-grayish-blue);
+}
+
+.card__title{
+    color: var(--neon-green);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.457px;
+}
+
+.card__content{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.257px;
+    text-align: center;
+}
+
+.card__content::before{
+    content: "\“";
+}
+
+.card__content::after{
+    content: "\”";
+}
+
+.advice__generator-button{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    bottom: -32px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    cursor: pointer;
+}
+
+.advice__generator-button span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(images/icon-dice.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.advice__generator-button:hover{
+    box-shadow: 0px 0px 40px 0px var(--neon-green);
+    transform: scale(1.1);
+    transition: all ease 200ms;
+}
+
+.card__divider{
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: url(images/pattern-divider-mobile.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(min-width: 760px){
+    .card__content{
+        font-size: 28px;
+    }
+    .card__title{
+        font-size: 13px;
+    }
+    .card__divider{
+        background-image: url(images/pattern-divider-desktop.svg);
+    }
+    .card__container{
+        border-radius: 16px;
+    }
+}
