@@ -27,11 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![app preview](./images/screenshot%20desktop.png)
+![App preview](./images/screenshot%20desktop.png)
 
 ### Links
 
-- Live Site URL: [Clik me to see live website!](https://karen-benites.github.io/advice-generator-app/)
+- Live Site URL: [Click here to see the live website!](https://karen-benites.github.io/advice-generator-app/)
 
 ## My process
 
@@ -41,14 +41,14 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- Vanilla Javascript
+- Vanilla JavaScript
 - Adviceslip API
 
 ### What I learned
 
-What I mainly learnt here was to write javascript code with OOP approach. I've always worked with functional programming paradigm, but I often saw many apps built using this OOP approach. So I definitely wanted to give it a try through this small project. It is basically a short class.
+What I mainly learned here was writing JavaScript code with an OOP approach. I've always worked with the functional programming paradigm, but I often saw many apps built using this OOP approach. This small project was definitely a good opportunity to give it a try. It's basically implemented as a simple class.
 
-Also, this was a perfect time to practice simple GET HTTP requests using a REST API, and promises handling.
+Additionally, this was a perfect chance to practice simple GET HTTP requests using a REST API and handling promises.
 
 ```js
 class AdviceGenerator {
@@ -78,23 +78,23 @@ class AdviceGenerator {
 }
 ```
 
-I did not face any mayor challenges. regarding code, since I'd already practiced a lot with fetch method before I started this project. The only issue I experienced here was regarding html structure, especially the divider image. At first, I used an "img" tag to put the corresponding divider picture. But, since this picture is different on mobile and desktop; I realized later that it can be a little bit more complicated to change the image content depending on screen size. Of course, this can be easly done changing img src attribute using a Javascript event listener, but then, I realized there was a more efficient way of doing so without using any JS at all.
+I did not face any major challenges regarding the code, since I had already practiced a lot with the fetch method before starting this project. The only issue I experienced was with the HTML structure, especially the divider image. At first, I used an "img" tag to insert the corresponding divider picture. However, since this picture differs between mobile and desktop views, I later realized it could be a bit more complicated to change the image content depending on screen size. Of course, this could easily be done by changing the img src attribute using a JavaScript event listener, but then I discovered there was a more efficient way to do this without using any JS at all.
 
-I simply used an span html tag and added the divider as a background image. On that way I could easily change the background url using css media queries.
+I simply used an HTML span tag and added the divider as a background image. This way, I could easily change the background URL using CSS media queries.
 
 ### Continued development
 
-In future projects (not this one) I'd like to practice more REST API usage: trying other methods apart from GET. I've already done that in smaller practice projects, but I want to implement them in a larger app with a nice design. Nice designs really motivate me to build a more robust solucion, and gives me the opportunity to put my UX UI knowledge into practice (especially accesibility issues)
+In future projects (not this one), I'd like to practice more REST API usage: trying other methods beyond GET. I've already done that in smaller practice projects, but I want to implement them in a larger app with a nice design. Attractive designs really motivate me to build more robust solutions and give me the opportunity to put my UX/UI knowledge into practice (especially regarding accessibility issues).
 
 ### Useful resources
 
-- [Platzi API REST Fundamentals](https://platzi.com/cursos/api/) - This helped me for understanding and using API REST to pull data form an external server. I also learnt how to handle data with fetch.
-- [Prettier](https://prettier.io/docs/install) - A js code formatter, ensuring consistent style
-- [Eslint](https://eslint.org/) - An extra code checker to find and fix problems with your JavaScript code, f.e: unused variables.
+- [Platzi API REST Fundamentals](https://platzi.com/cursos/api/) - This helped me understand and use REST APIs to pull data from an external server. I also learned how to handle data with fetch.
+- [Prettier](https://prettier.io/docs/install) - A JavaScript code formatter, ensuring consistent style.
+- [ESLint](https://eslint.org/) - An extra code checker to find and fix problems with your JavaScript code, e.g., unused variables.
 
 ## Author
 
-- Linkedin - [Karen Benites](https://www.linkedin.com/in/karenlbenites/)
+- LinkedIn - [Karen Benites](https://www.linkedin.com/in/karenlbenites/)
 - Frontend Mentor - [@Karen-Benites](https://www.frontendmentor.io/profile/Karen-Benites)
 - X - [@karensdevia](https://x.com/karensdevia)
-- Instagram - [@karensdevia](https://www.instagram.com/karensdevia/#)
+- Instagram - [@karensdevia](https://www.instagram.com/karensdevia/)
