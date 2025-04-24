@@ -14,7 +14,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -28,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot%20desktop.png)
+![app preview](./images/screenshot%20desktop.png)
 
 ### Links
 
@@ -42,6 +41,8 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Vanilla Javascript
+- Adviceslip API
 
 ### What I learned
 
@@ -87,7 +88,7 @@ In future projects (not this one) I'd like to practice more REST API usage: tryi
 
 ### Useful resources
 
-- [Platzi DOM course](https://platzi.com/cursos/document-object-model/) - This helped me for understanding and practicing DOM manipulation.
+- [Platzi API REST Fundamentals](https://platzi.com/cursos/api/) - This helped me for understanding and using API REST to pull data form an external server. I also learnt how to handle data with fetch.
 - [Prettier](https://prettier.io/docs/install) - A js code formatter, ensuring consistent style
 - [Eslint](https://eslint.org/) - An extra code checker to find and fix problems with your JavaScript code, f.e: unused variables.
 
