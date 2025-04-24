@@ -25,3 +25,5 @@ class AdviceGenerator {
 }
 
 const adviceApp = new AdviceGenerator()
+
+adviceApp.getNewAdvice()
