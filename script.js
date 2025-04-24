@@ -1,17 +1,27 @@
-const button = document.querySelector(".advice__generator-button")
-const adviceIdDOM = document.querySelector(".card__title span")
-const adviceContent = document.querySelector(".card__content")
+class AdviceGenerator {
+  constructor() {
+    this.button = document.querySelector(".advice__generator-button")
+    this.adviceIdDOM = document.querySelector(".card__title span")
+    this.adviceContent = document.querySelector(".card__content")
+    this.getNewAdvice = this.getNewAdvice.bind(this)
+    this.initEvents()
+  }
 
-button.addEventListener('click', getNewAdvice)
+  initEvents() {
+    this.button.addEventListener("click", this.getNewAdvice)
+  }
 
-function getNewAdvice(){
-    fetch('https://api.adviceslip.com/advice')
-    .then(response => {
+  getNewAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+      .then(response => {
         return response.json()
-    })
-    .then(data => {
-        adviceIdDOM.textContent = data.slip.id
-        adviceContent.textContent = data.slip.advice
-    })
-    .catch(error => console.log(error.message))
+      })
+      .then(data => {
+        this.adviceIdDOM.textContent = data.slip.id
+        this.adviceContent.textContent = data.slip.advice
+      })
+      .catch(error => console.log(error.message))
+  }
 }
+
+const adviceApp = new AdviceGenerator()
