@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://karen-benites.github.io/advice-generator-app/)
+- Live Site URL: [Clik me to see live website!](https://karen-benites.github.io/advice-generator-app/)
 
 ## My process
 
